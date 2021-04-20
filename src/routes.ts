@@ -1,5 +1,10 @@
 import { Router } from 'express';
+import { SettingsController } from './controllers/SettingsController';
 
-const router = Router();
+const settingsController = new SettingsController();
 
-export default router;
+const routes = Router();
+
+routes.post('/settings', settingsController.create);
+
+export default routes;
