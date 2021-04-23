@@ -1,11 +1,4 @@
-import express from 'express';
-import routes from './routes';
+import { http } from "./http";
+import './websocket/client';
 
-import './database';
-
-const app = express();
-
-app.use(express.json());
-app.use(routes);
-
-export default app;
+http.listen(3333);

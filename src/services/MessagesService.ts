@@ -1,6 +1,6 @@
 import { getCustomRepository, Repository } from "typeorm";
 import { Message } from "../entities/Message";
-import { MessageRepository } from "../repositories/MessageRepository";
+import { MessageRepository } from "../repositories/MessagesRepository";
 
 interface IMessageCreate {
   admin_id?: string;
